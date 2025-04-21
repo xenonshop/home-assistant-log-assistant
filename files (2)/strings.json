@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Home Assistant Log Assistant",
+        "description": "Set up the Log Assistant to monitor your Home Assistant logs and provide suggestions for issues.",
+        "data": {
+          "api_key": "OpenAI API Key",
+          "model_name": "OpenAI Model Name",
+          "log_path": "Path to Home Assistant log file",
+          "scan_interval": "Scan interval in seconds"
+        }
+      }
+    },
+    "error": {
+      "api_key_required": "OpenAI API Key is required",
+      "cannot_connect": "Failed to connect to OpenAI API"
+    },
+    "abort": {
+      "already_configured": "Log Assistant is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Log Assistant Options",
+        "description": "Configure the Log Assistant settings",
+        "data": {
+          "api_key": "OpenAI API Key",
+          "model_name": "OpenAI Model Name",
+          "log_path": "Path to Home Assistant log file",
+          "scan_interval": "Scan interval in seconds"
+        }
+      }
+    }
+  }
+}

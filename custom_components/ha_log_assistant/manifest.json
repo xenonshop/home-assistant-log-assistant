@@ -1,0 +1,9 @@
+{
+  "domain": "ha_log_assistant",
+  "name": "Home Assistant Log Assistant",
+  "version": "0.1.0",
+  "documentation": "https://github.com/yourusername/home-assistant-log-assistant",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@yourusername"]
+}
