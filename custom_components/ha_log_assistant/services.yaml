@@ -1,1 +1,36 @@
-# Service definitions for the integration
+analyze_logs:
+  name: Analyze Logs
+  description: Manually trigger log analysis to find issues and generate suggestions.
+
+clear_issues:
+  name: Clear Issues
+  description: Clear all detected issues from the log assistant.
+
+get_issues:
+  name: Get Issues
+  description: Retrieve detected issues, optionally filtered by type and limited to a count.
+  fields:
+    issue_type:
+      name: Issue Type
+      description: Filter issues by type (e.g., entity_unavailable, automation_error, etc.)
+      example: "automation_error"
+      required: false
+      selector:
+        select:
+          options:
+            - "entity_unavailable"
+            - "automation_error"
+            - "script_error"
+            - "config_error"
+            - "integration_error"
+            - "general_error"
+    limit:
+      name: Limit
+      description: Maximum number of issues to return
+      example: 5
+      required: false
+      selector:
+        number:
+          min: 1
+          max: 100
+          mode: slider
